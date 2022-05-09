@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Create a New Call</title>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="/images/Sies logo.png" alt="logo">
+  </div>
+
+    <div class="calldiv"> 
+
+      <h3 style="text-align: center">Create a New Call</h3>
+
+        <form action="" class="frm">
+            
+        <label for="">Serial No.</label>
+        <input type="text" placeholder="Enter Serial No.">
+        
+        <label for="">Date</label>
+        <input type=date id=a>
+        <script>
+        document.getElementById('a').value = new Date().toISOString().substring(0, 10);
+        </script>
+
+        <label for="">Time</label>
+        <input type="time" id="b">
+        <script>
+          var today = new Date();
+          var time = today.getHours() + ":" + today.getMinutes();
+            document.getElementById("b").value = time;
+          </script>
+        
+        <label for="Name">Name of Faculty:</label>
+        <input type="text" placeholder="Enter Name of Faculty">
+
+        
+        <label for="">Select Department</label>
+        <select id="department" name="department">
+          <option value="mca">MCA</option>
+          <option value="ca">MBA</option>
+          <option value="usa">MMS</option>
+          <option value="usa">PGDM</option>
+          <option value="usa">Office</option>
+          </select>
+        
+        
+        
+        <label for="Complaint">Complaint</label>
+        <input type="text" placeholder="Enter Complaint Details" name="" id="">
+        
+      
+        
+        <label for="">Date of Resolution:</label>
+        <input type="date" id="c">
+        <script>
+          document.getElementById('c').value = new Date().toISOString().substring(0, 10);
+          </script>
+        
+       
+        <label for="">Time of Resolution:</label>
+        <input type="time" id="d">
+        <script>
+          var today = new Date();
+          var time = today.getHours() + ":" + today.getMinutes();
+            document.getElementById("d").value = time;
+          </script>
+        
+
+        <label for="Complaint">Resolution</label>
+        <input type="text" placeholder="Enter Resolution Details" name="" id="">
+
+
+        <input type="button" value="Add">
+        
+        </form>
+</body>
+</html>
